@@ -54,7 +54,6 @@ if($type=="order"){
     $menu = $conn->query("SELECT * FROM menu");
 }
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -62,13 +61,33 @@ if($type=="order"){
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <style>
 body{
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-    color:white;
+    background: linear-gradient(135deg, #fff5f7 0%, #ffe0eb 100%);
+    color:#333;
 }
 .card{
-    background:#1c2b4a;
-    border:1px solid #00d4ff;
+    background:#ffffff;
+    border:2px solid #ffb6d9;
+    box-shadow: 0 4px 6px rgba(255, 182, 217, 0.1);
 }
+h3{
+    color:#ff6b9d;
+}
+.btn-info{
+    background-color:#ff6b9d;
+    border-color:#ff6b9d;
+}
+.btn-info:hover{
+    background-color:#ff4081;
+    border-color:#ff4081;
+}
+.form-control{
+    border-color:#ffb6d9;
+}
+.form-control:focus{
+    border-color:#ff6b9d;
+    box-shadow: 0 0 0 0.2rem rgba(255, 107, 157, 0.25);
+}
+</style>
 </style>
 </head>
 <body class="container py-5">
